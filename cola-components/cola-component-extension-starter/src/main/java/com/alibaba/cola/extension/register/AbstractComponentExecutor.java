@@ -7,6 +7,8 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
+ * 扩展点的抽象执行方法
+ *
  * @author fulan.zjf
  * @date 2017/12/21
  */

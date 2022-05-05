@@ -35,6 +35,7 @@ public class ExtensionRegister{
             extensionClz = ClassUtils.getUserClass(extensionObject);
         }
         Extension extensionAnn = AnnotationUtils.findAnnotation(extensionClz, Extension.class);
+        // 扩展点三要素
         BizScenario bizScenario = BizScenario.valueOf(extensionAnn.bizId(), extensionAnn.useCase(), extensionAnn.scenario());
         ExtensionCoordinate extensionCoordinate = new ExtensionCoordinate(calculateExtensionPoint(extensionClz), bizScenario.getUniqueIdentity());
         ExtensionPointI preVal = extensionRepository.getExtensionRepo().put(extensionCoordinate, extensionObject);

@@ -9,6 +9,7 @@ package com.alibaba.cola.extension;
 
 /**
  * Extension Coordinate(扩展坐标) is used to uniquely position an Extension
+ * <a ref = "https://blog.csdn.net/significantfrank/article/details/85785565">扩展点设计-身份识别</a>
  * @author fulan.zjf 2017-11-05
  */
 public class ExtensionCoordinate {
